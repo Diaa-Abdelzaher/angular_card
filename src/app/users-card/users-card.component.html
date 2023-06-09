@@ -1,0 +1,12 @@
+<div class="card mb-4 " style="height:450px; align-items: center;background-color: rgb(196, 225, 229);" >
+      <img [src]="usersData.image" class="card-img-top" style="width: 10rem;" alt="User Image">
+      <div class="card-body">
+        <h5 class="card-title">{{ usersData.name }}</h5>
+        <p class="card-text"><strong>Username:</strong> {{ usersData.username }}</p>
+        <p class="card-text"><strong>Email:</strong> {{ usersData.email }}</p>
+        <p class="card-text"><strong>Phone:</strong> {{ usersData.phone }}</p>
+        <p class="card-text"><strong>Website:</strong> {{ usersData.website }}</p>
+        <i [ngClass]="usersData.is_verifed ? 'bi bi-check-circle-fill text-success' : 'bi bi-x-circle-fill text-danger'"></i>
+        <span class="ms-2">{{ usersData.is_verifed ? 'Verified' : 'Not Verified' }}</span>
+      </div>
+    </div>
